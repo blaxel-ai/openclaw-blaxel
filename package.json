@@ -1,0 +1,34 @@
+{
+  "name": "@blaxel/openclaw-skill",
+  "version": "0.7.0",
+  "description": "Blaxel Sandbox plugin for OpenClaw — secure code execution in lightweight VMs",
+  "license": "MIT",
+  "type": "module",
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "files": [
+    "index.ts",
+    "src",
+    "openclaw.plugin.json"
+  ],
+  "dependencies": {
+    "@blaxel/core": "^0.2.66",
+    "@sinclair/typebox": "^0.34.48",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.3",
+    "typescript": "^5.7.0"
+  },
+  "peerDependencies": {
+    "openclaw": "*"
+  },
+  "peerDependenciesMeta": {
+    "openclaw": {
+      "optional": true
+    }
+  }
+}

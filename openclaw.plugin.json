@@ -1,0 +1,94 @@
+{
+  "id": "blaxel-sandbox",
+  "name": "Blaxel Sandbox",
+  "description": "Persistent, isolated sandbox environments on Blaxel — develop and host apps with CodeInterpreter (Jupyter) or raw Sandbox mode",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "mode": {
+        "type": "string",
+        "enum": ["interpreter", "sandbox"],
+        "description": "Execution mode. 'interpreter' uses a Jupyter-powered CodeInterpreter (zero config). 'sandbox' uses a raw VM. Defaults to 'interpreter'."
+      },
+      "image": {
+        "type": "string",
+        "description": "Container image (sandbox mode only, ignored in interpreter mode). Defaults to 'blaxel/base-image:latest'."
+      },
+      "memory": {
+        "type": "number",
+        "description": "Memory allocation in MB. Defaults to 4096."
+      },
+      "region": {
+        "type": "string",
+        "description": "Blaxel deployment region (e.g. 'us-pdx-1'). Optional."
+      },
+      "autoCreate": {
+        "type": "boolean",
+        "description": "Auto-create the sandbox if it doesn't exist (sandbox mode only). Defaults to true."
+      },
+      "workingDir": {
+        "type": "string",
+        "description": "Default working directory inside sandboxes. Defaults to '/home'."
+      },
+      "execTimeout": {
+        "type": "number",
+        "description": "Default timeout for command execution in milliseconds. Defaults to 60000."
+      },
+      "blaxel": {
+        "type": "object",
+        "additionalProperties": false,
+        "description": "Blaxel auth. Not needed when running on Blaxel (BL_CLOUD env is set). Otherwise falls back to 'bl login' credentials or environment variables.",
+        "properties": {
+          "workspace": {
+            "type": "string",
+            "description": "Blaxel workspace name."
+          },
+          "apiKey": {
+            "type": "string",
+            "description": "Blaxel API key."
+          }
+        }
+      }
+    }
+  },
+  "uiHints": {
+    "mode": {
+      "label": "Mode",
+      "help": "'interpreter' for Jupyter-powered CodeInterpreter, 'sandbox' for raw VM."
+    },
+    "image": {
+      "label": "Container Image",
+      "placeholder": "blaxel/base-image:latest",
+      "help": "Sandbox mode only. Available: base-image, nextjs, vite, expo, py-app, ts-app, node."
+    },
+    "memory": {
+      "label": "Memory (MB)",
+      "placeholder": "4096"
+    },
+    "region": {
+      "label": "Region",
+      "placeholder": "us-pdx-1"
+    },
+    "autoCreate": {
+      "label": "Auto-create sandbox"
+    },
+    "workingDir": {
+      "label": "Working Directory",
+      "placeholder": "/home"
+    },
+    "execTimeout": {
+      "label": "Exec Timeout (ms)",
+      "placeholder": "60000"
+    },
+    "blaxel.workspace": {
+      "label": "Blaxel Workspace",
+      "help": "Not needed when BL_CLOUD is set."
+    },
+    "blaxel.apiKey": {
+      "label": "Blaxel API Key",
+      "sensitive": true,
+      "help": "Not needed when BL_CLOUD is set."
+    }
+  }
+}
