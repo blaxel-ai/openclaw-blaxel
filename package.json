@@ -3,6 +3,10 @@
   "version": "0.7.0",
   "description": "Blaxel Sandbox plugin for OpenClaw — secure code execution in lightweight VMs",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blaxel-ai/openclaw-blaxel"
+  },
   "type": "module",
   "openclaw": {
     "extensions": [
