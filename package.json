@@ -1,5 +1,5 @@
 {
-  "name": "@blaxel/openclaw-skill",
+  "name": "openclaw-blaxel-sandbox",
   "version": "0.7.0",
   "description": "Blaxel Sandbox plugin for OpenClaw — secure code execution in lightweight VMs",
   "license": "MIT",
