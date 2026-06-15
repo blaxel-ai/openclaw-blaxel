@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@blaxel/core':
         specifier: ^0.2.66
-        version: 0.2.66(@hey-api/openapi-ts@0.92.4(typescript@5.9.3))
+        version: 0.2.66(@hey-api/openapi-ts@0.92.4(typescript@6.0.3))(debug@4.4.3)
       '@sinclair/typebox':
         specifier: ^0.34.48
         version: 0.34.48
@@ -25,8 +25,8 @@ importers:
         specifier: ^25.2.3
         version: 25.2.3
       typescript:
-        specifier: ^5.7.0
-        version: 5.9.3
+        specifier: ^6.0.3
+        version: 6.0.3
 
 packages:
 
@@ -1282,7 +1282,7 @@ packages:
         optional: true
 
   '@whiskeysockets/libsignal-node@https://codeload.github.com/whiskeysockets/libsignal-node/tar.gz/1c30d7d7e76a3b0aa120b04dc6a26f5a12dccf67':
-    resolution: {tarball: https://codeload.github.com/whiskeysockets/libsignal-node/tar.gz/1c30d7d7e76a3b0aa120b04dc6a26f5a12dccf67}
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/whiskeysockets/libsignal-node/tar.gz/1c30d7d7e76a3b0aa120b04dc6a26f5a12dccf67}
     version: 2.0.1
 
   abort-controller@3.0.0:
@@ -2978,6 +2978,11 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
+  typescript@6.0.3:
+    resolution: {integrity: sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
   uc.micro@2.1.0:
     resolution: {integrity: sha512-ARDJmphmdvUk6Glw7y9DQ2bFkKBHwQHLi2lsaH6PPmz/Ka9sFOBsBluozhDltWmnv9u/cF6Rt87znRTPV+yp/A==}
 
@@ -3666,9 +3671,9 @@ snapshots:
 
   '@babel/runtime@7.28.6': {}
 
-  '@blaxel/core@0.2.66(@hey-api/openapi-ts@0.92.4(typescript@5.9.3))':
+  '@blaxel/core@0.2.66(@hey-api/openapi-ts@0.92.4(typescript@6.0.3))(debug@4.4.3)':
     dependencies:
-      '@hey-api/client-fetch': 0.10.2(@hey-api/openapi-ts@0.92.4(typescript@5.9.3))
+      '@hey-api/client-fetch': 0.10.2(@hey-api/openapi-ts@0.92.4(typescript@6.0.3))
       '@modelcontextprotocol/sdk': 1.26.0(zod@3.25.76)
       axios: 1.13.5(debug@4.4.3)
       dotenv: 16.6.1
@@ -3793,17 +3798,17 @@ snapshots:
 
   '@hapi/hoek@9.3.0': {}
 
-  '@hey-api/client-fetch@0.10.2(@hey-api/openapi-ts@0.92.4(typescript@5.9.3))':
+  '@hey-api/client-fetch@0.10.2(@hey-api/openapi-ts@0.92.4(typescript@6.0.3))':
     dependencies:
-      '@hey-api/openapi-ts': 0.92.4(typescript@5.9.3)
+      '@hey-api/openapi-ts': 0.92.4(typescript@6.0.3)
 
-  '@hey-api/codegen-core@0.7.0(typescript@5.9.3)':
+  '@hey-api/codegen-core@0.7.0(typescript@6.0.3)':
     dependencies:
-      '@hey-api/types': 0.1.3(typescript@5.9.3)
+      '@hey-api/types': 0.1.3(typescript@6.0.3)
       ansi-colors: 4.1.3
       c12: 3.3.3
       color-support: 1.1.3
-      typescript: 5.9.3
+      typescript: 6.0.3
     transitivePeerDependencies:
       - magicast
 
@@ -3813,35 +3818,35 @@ snapshots:
       '@types/json-schema': 7.0.15
       js-yaml: 4.1.1
 
-  '@hey-api/openapi-ts@0.92.4(typescript@5.9.3)':
+  '@hey-api/openapi-ts@0.92.4(typescript@6.0.3)':
     dependencies:
-      '@hey-api/codegen-core': 0.7.0(typescript@5.9.3)
+      '@hey-api/codegen-core': 0.7.0(typescript@6.0.3)
       '@hey-api/json-schema-ref-parser': 1.3.0
-      '@hey-api/shared': 0.2.0(typescript@5.9.3)
-      '@hey-api/types': 0.1.3(typescript@5.9.3)
+      '@hey-api/shared': 0.2.0(typescript@6.0.3)
+      '@hey-api/types': 0.1.3(typescript@6.0.3)
       ansi-colors: 4.1.3
       color-support: 1.1.3
       commander: 14.0.3
-      typescript: 5.9.3
+      typescript: 6.0.3
     transitivePeerDependencies:
       - magicast
 
-  '@hey-api/shared@0.2.0(typescript@5.9.3)':
+  '@hey-api/shared@0.2.0(typescript@6.0.3)':
     dependencies:
-      '@hey-api/codegen-core': 0.7.0(typescript@5.9.3)
+      '@hey-api/codegen-core': 0.7.0(typescript@6.0.3)
       '@hey-api/json-schema-ref-parser': 1.3.0
-      '@hey-api/types': 0.1.3(typescript@5.9.3)
+      '@hey-api/types': 0.1.3(typescript@6.0.3)
       ansi-colors: 4.1.3
       cross-spawn: 7.0.6
       open: 11.0.0
       semver: 7.7.3
-      typescript: 5.9.3
+      typescript: 6.0.3
     transitivePeerDependencies:
       - magicast
 
-  '@hey-api/types@0.1.3(typescript@5.9.3)':
+  '@hey-api/types@0.1.3(typescript@6.0.3)':
     dependencies:
-      typescript: 5.9.3
+      typescript: 6.0.3
 
   '@homebridge/ciao@1.3.5':
     dependencies:
@@ -6849,7 +6854,10 @@ snapshots:
       media-typer: 1.1.0
       mime-types: 3.0.2
 
-  typescript@5.9.3: {}
+  typescript@5.9.3:
+    optional: true
+
+  typescript@6.0.3: {}
 
   uc.micro@2.1.0: {}
 
