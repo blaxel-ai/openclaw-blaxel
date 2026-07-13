@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@blaxel/core':
         specifier: ^0.2.66
-        version: 0.2.66(@hey-api/openapi-ts@0.92.4(typescript@5.9.3))
+        version: 0.2.66(@hey-api/openapi-ts@0.92.4(typescript@5.9.3))(debug@4.4.3)
       '@sinclair/typebox':
         specifier: ^0.34.48
         version: 0.34.48
@@ -22,8 +22,8 @@ importers:
         version: 4.3.6
     devDependencies:
       '@types/node':
-        specifier: ^25.2.3
-        version: 25.2.3
+        specifier: ^26.1.0
+        version: 26.1.1
       typescript:
         specifier: ^5.7.0
         version: 5.9.3
@@ -1247,6 +1247,9 @@ packages:
   '@types/node@25.2.3':
     resolution: {integrity: sha512-m0jEgYlYz+mDJZ2+F4v8D1AyQb+QzsNqRuI7xg1VQX/KlKS0qT9r1Mo16yo5F/MtifXFgaofIFsdFMox2SxIbQ==}
 
+  '@types/node@26.1.1':
+    resolution: {integrity: sha512-nxAkRSVkN1Y0JC1W8ky/fTfkGsMmcrRsbx+3XoZE+rMOX71kLYTV7fLXpqud1GpbpP5TuffXFqfX7fH2GgZREw==}
+
   '@types/qs@6.14.0':
     resolution: {integrity: sha512-eOunJqu0K1923aExK6y8p6fsihYEn/BYuQ4g0CxAAgFc4b/ZLN4CrsRZ55srTdqoiLzU2B2evC+apEIxprEzkQ==}
 
@@ -1282,7 +1285,7 @@ packages:
         optional: true
 
   '@whiskeysockets/libsignal-node@https://codeload.github.com/whiskeysockets/libsignal-node/tar.gz/1c30d7d7e76a3b0aa120b04dc6a26f5a12dccf67':
-    resolution: {tarball: https://codeload.github.com/whiskeysockets/libsignal-node/tar.gz/1c30d7d7e76a3b0aa120b04dc6a26f5a12dccf67}
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/whiskeysockets/libsignal-node/tar.gz/1c30d7d7e76a3b0aa120b04dc6a26f5a12dccf67}
     version: 2.0.1
 
   abort-controller@3.0.0:
@@ -2991,6 +2994,9 @@ packages:
   undici-types@7.16.0:
     resolution: {integrity: sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==}
 
+  undici-types@8.3.0:
+    resolution: {integrity: sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ==}
+
   undici@7.22.0:
     resolution: {integrity: sha512-RqslV2Us5BrllB+JeiZnK4peryVTndy9Dnqq62S3yYRRTj0tFQCwEniUy2167skdGOy3vqRzEvl1Dm4sV2ReDg==}
     engines: {node: '>=20.18.1'}
@@ -3666,7 +3672,7 @@ snapshots:
 
   '@babel/runtime@7.28.6': {}
 
-  '@blaxel/core@0.2.66(@hey-api/openapi-ts@0.92.4(typescript@5.9.3))':
+  '@blaxel/core@0.2.66(@hey-api/openapi-ts@0.92.4(typescript@5.9.3))(debug@4.4.3)':
     dependencies:
       '@hey-api/client-fetch': 0.10.2(@hey-api/openapi-ts@0.92.4(typescript@5.9.3))
       '@modelcontextprotocol/sdk': 1.26.0(zod@3.25.76)
@@ -4945,6 +4951,10 @@ snapshots:
   '@types/node@25.2.3':
     dependencies:
       undici-types: 7.16.0
+
+  '@types/node@26.1.1':
+    dependencies:
+      undici-types: 8.3.0
 
   '@types/qs@6.14.0': {}
 
@@ -6858,6 +6868,8 @@ snapshots:
   uint8array-extras@1.5.0: {}
 
   undici-types@7.16.0: {}
+
+  undici-types@8.3.0: {}
 
   undici@7.22.0: {}
 
