@@ -37,7 +37,8 @@
   },
   "pnpm": {
     "overrides": {
-      "js-yaml": "4.3.0"
+      "js-yaml": "4.3.0",
+      "openclaw": "2026.7.1"
     }
   }
 }

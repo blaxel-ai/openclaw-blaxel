@@ -6,6 +6,7 @@ settings:
 
 overrides:
   js-yaml: 4.3.0
+  openclaw: 2026.7.1
 
 importers:
 
@@ -18,8 +19,8 @@ importers:
         specifier: ^0.34.48
         version: 0.34.48
       openclaw:
-        specifier: '*'
-        version: 2026.7.1-2(@aws-sdk/credential-provider-node@3.972.9)(@smithy/signature-v4@5.6.12)
+        specifier: 2026.7.1
+        version: 2026.7.1(@aws-sdk/credential-provider-node@3.972.9)(@smithy/signature-v4@5.6.12)
       zod:
         specifier: ^4.3.6
         version: 4.3.6
@@ -276,8 +277,8 @@ packages:
     resolution: {integrity: sha512-juG5VWh4qAivzTAeMzvY9xs9HY5rAcr2E4I7tiSSCokRFi7XIZCAu92ZkSTsIj1OPceCifL3cpfteP3pDT9/QQ==}
     engines: {node: '>=14.0.0'}
 
-  '@openclaw/ai@2026.7.1-2':
-    resolution: {integrity: sha512-st+NH0cxlQqdbEur//yYqM7WlYBjeEBnop3cztJTSCONKjv6LNoGguI9cH65asZG94FdM/39z857isRGPnZvEw==}
+  '@openclaw/ai@2026.7.1':
+    resolution: {integrity: sha512-FsKy5DXSHf4qyN8Huoz/10HZRgoEwLF4uk8UWaCafaIler+q5Fsl51HcrIqIrEe0S38OT7LOaxnR++MOshAlmw==}
     engines: {node: '>=22.19.0'}
 
   '@openclaw/fs-safe@0.4.1':
@@ -1181,8 +1182,8 @@ packages:
       zod:
         optional: true
 
-  openclaw@2026.7.1-2:
-    resolution: {integrity: sha512-ycF3yPcbjN6bUPeaUx6Mh6vze1hQWoD3CT/wWcmD7a8xaHHHRUaAlaq+lFxMHf1ssEgODVAwjlzYqp2twkYZ7g==}
+  openclaw@2026.7.1:
+    resolution: {integrity: sha512-ge/Xss99CHAjPL/ikmH/UFoiOrjcxDB4sW3y9mhyCD+dYW3wzV7TKbAVdkrXFgAG2d2BjpJofP97zUZ+umxo8g==}
     engines: {node: '>=22.22.3 <23 || >=24.15.0 <25 || >=25.9.0'}
     hasBin: true
 
@@ -2043,7 +2044,7 @@ snapshots:
 
   '@mozilla/readability@0.6.0': {}
 
-  '@openclaw/ai@2026.7.1-2(@aws-sdk/credential-provider-node@3.972.9)(@modelcontextprotocol/sdk@1.29.0(zod@4.4.3))(@smithy/signature-v4@5.6.12)(ws@8.21.0)(zod@4.4.3)':
+  '@openclaw/ai@2026.7.1(@aws-sdk/credential-provider-node@3.972.9)(@modelcontextprotocol/sdk@1.29.0(zod@4.4.3))(@smithy/signature-v4@5.6.12)(ws@8.21.0)(zod@4.4.3)':
     dependencies:
       '@anthropic-ai/sdk': 0.109.1(zod@4.4.3)
       '@google/genai': 2.10.0(@modelcontextprotocol/sdk@1.29.0(zod@4.4.3))
@@ -2933,7 +2934,7 @@ snapshots:
       ws: 8.21.0
       zod: 4.4.3
 
-  openclaw@2026.7.1-2(@aws-sdk/credential-provider-node@3.972.9)(@smithy/signature-v4@5.6.12):
+  openclaw@2026.7.1(@aws-sdk/credential-provider-node@3.972.9)(@smithy/signature-v4@5.6.12):
     dependencies:
       '@agentclientprotocol/sdk': 1.1.0(zod@4.4.3)
       '@anthropic-ai/sdk': 0.109.1(zod@4.4.3)
@@ -2948,7 +2949,7 @@ snapshots:
       '@mistralai/mistralai': 2.4.0
       '@modelcontextprotocol/sdk': 1.29.0(zod@4.4.3)
       '@mozilla/readability': 0.6.0
-      '@openclaw/ai': 2026.7.1-2(@aws-sdk/credential-provider-node@3.972.9)(@modelcontextprotocol/sdk@1.29.0(zod@4.4.3))(@smithy/signature-v4@5.6.12)(ws@8.21.0)(zod@4.4.3)
+      '@openclaw/ai': 2026.7.1(@aws-sdk/credential-provider-node@3.972.9)(@modelcontextprotocol/sdk@1.29.0(zod@4.4.3))(@smithy/signature-v4@5.6.12)(ws@8.21.0)(zod@4.4.3)
       '@openclaw/fs-safe': 0.4.1
       '@openclaw/proxyline': 0.3.3(undici@8.5.0)
       '@silvia-odwyer/photon-node': 0.3.4
