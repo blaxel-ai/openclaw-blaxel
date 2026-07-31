@@ -34,5 +34,10 @@
     "openclaw": {
       "optional": true
     }
+  },
+  "pnpm": {
+    "overrides": {
+      "js-yaml": "4.3.0"
+    }
   }
 }
