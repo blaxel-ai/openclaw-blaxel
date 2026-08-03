@@ -1,0 +1,9 @@
+overrides:
+  js-yaml: "4.3.0"
+  openclaw: "2026.7.1"
+
+allowBuilds:
+  '@google/genai': set this to true or false
+  openclaw: set this to true or false
+  protobufjs: set this to true or false
+  tree-sitter-bash: set this to true or false
