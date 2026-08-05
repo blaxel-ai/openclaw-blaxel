@@ -18,6 +18,10 @@
     "src",
     "openclaw.plugin.json"
   ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test"
+  },
   "dependencies": {
     "@blaxel/core": "^0.2.66",
     "@sinclair/typebox": "^0.34.48",
@@ -25,7 +29,8 @@
   },
   "devDependencies": {
     "@types/node": "^25.2.3",
-    "typescript": "^5.7.0"
+    "typescript": "^5.7.0",
+    "undici": "8.9.0"
   },
   "peerDependencies": {
     "openclaw": "*"

@@ -32,6 +32,9 @@ importers:
       typescript:
         specifier: ^5.7.0
         version: 5.9.3
+      undici:
+        specifier: 8.9.0
+        version: 8.9.0
 
 packages:
 
