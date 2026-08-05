@@ -3,12 +3,6 @@ overrides:
   openclaw: '2026.7.1'
   undici: '8.9.0'
 
-onlyBuiltDependencies:
-  - '@google/genai'
-  - openclaw
-  - protobufjs
-  - tree-sitter-bash
-
 allowBuilds:
   '@google/genai': true
   openclaw: true
