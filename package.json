@@ -3,6 +3,7 @@
   "version": "0.7.0",
   "description": "Blaxel Sandbox plugin for OpenClaw — secure code execution in lightweight VMs",
   "license": "MIT",
+  "packageManager": "pnpm@11.7.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/blaxel-ai/openclaw-blaxel"
@@ -18,6 +19,10 @@
     "src",
     "openclaw.plugin.json"
   ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test"
+  },
   "dependencies": {
     "@blaxel/core": "^0.2.66",
     "@sinclair/typebox": "^0.34.48",
@@ -25,7 +30,8 @@
   },
   "devDependencies": {
     "@types/node": "^25.2.3",
-    "typescript": "^5.7.0"
+    "typescript": "^5.7.0",
+    "undici": "8.9.0"
   },
   "peerDependencies": {
     "openclaw": "*"
@@ -33,12 +39,6 @@
   "peerDependenciesMeta": {
     "openclaw": {
       "optional": true
-    }
-  },
-  "pnpm": {
-    "overrides": {
-      "js-yaml": "4.3.0",
-      "openclaw": "2026.7.1"
     }
   }
 }
