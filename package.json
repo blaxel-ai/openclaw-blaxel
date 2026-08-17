@@ -24,7 +24,7 @@
     "test": "node --test"
   },
   "dependencies": {
-    "@blaxel/core": "^0.2.66",
+    "@blaxel/core": "^0.3.11",
     "@sinclair/typebox": "^0.34.52",
     "zod": "^4.4.3"
   },
