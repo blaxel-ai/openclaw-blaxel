@@ -25,14 +25,14 @@
   },
   "dependencies": {
     "@blaxel/core": "^0.3.11",
-    "@sinclair/typebox": "^0.34.48",
-    "zod": "^4.3.6"
+    "@sinclair/typebox": "^0.34.52",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
-    "@types/node": "^25.2.3",
-    "typescript": "^5.7.0",
+    "@types/node": "^26.2.0",
     "js-yaml": "4.3.1",
-    "undici": "8.9.0"
+    "typescript": "^5.7.0",
+    "undici": "8.10.0"
   },
   "peerDependencies": {
     "openclaw": "*"
