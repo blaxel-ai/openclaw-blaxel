@@ -17,6 +17,7 @@ jobs:
       github.event_name == 'workflow_dispatch' ||
       contains(github.event.pull_request.title, 'Dependabot') ||
       startsWith(github.event.pull_request.title, 'chore(deps)') ||
+      startsWith(github.head_ref, 'cploujoux/dependabot') ||
       startsWith(github.head_ref, 'cploujoux/devin/dependabot-') ||
       startsWith(github.head_ref, 'dependabot/') ||
       contains(github.event.pull_request.labels.*.name, 'dependencies')

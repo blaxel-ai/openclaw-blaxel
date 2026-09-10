@@ -30,7 +30,11 @@
   },
   "devDependencies": {
     "@types/node": "^26.2.0",
-    "js-yaml": "4.3.1",
+    "fast-uri": "3.1.7",
+    "hono": "4.13.5",
+    "js-yaml": "4.3.2",
+    "qs": "6.16.0",
+    "toml": "4.2.0",
     "typescript": "^5.7.0",
     "undici": "8.10.0"
   },
