@@ -3,7 +3,6 @@ overrides:
   js-yaml: '4.3.2'
   openclaw: '2026.7.1'
   qs: '6.16.0'
-  toml: '4.2.0'
   undici: '8.10.0'
   '@modelcontextprotocol/sdk': '1.30.0'
   hono: '4.13.5'
@@ -17,3 +16,6 @@ allowBuilds:
   openclaw: true
   protobufjs: true
   tree-sitter-bash: true
+
+minimumReleaseAgeExclude:
+  - '@blaxel/core@0.3.20'
