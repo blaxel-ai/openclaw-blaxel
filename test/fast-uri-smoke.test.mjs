@@ -25,7 +25,7 @@ test('fast-uri parses and normalizes a well-formed URI', () => {
   assert.equal(parsed.fragment, 'fragment');
 
   const normalized = fastUri.normalize(uri);
-  assert.ok(normalized.includes('example.com'), 'Normalized URI should preserve host');
+  assert.equal(fastUri.parse(normalized).host, 'example.com', 'Normalized URI should preserve host');
 });
 
 test('fast-uri does not normalize percent-encoded scheme to introduce structure (GHSA-jqff-g426-hqxp)', () => {
