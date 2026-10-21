@@ -10,8 +10,9 @@ overrides:
   openclaw: 2026.7.1
   qs: 6.16.0
   undici: 8.10.2
-  '@modelcontextprotocol/sdk': 1.31.0
-  hono: 4.13.7
+  '@modelcontextprotocol/sdk': 1.32.1
+  hono: 4.13.11
+  follow-redirects: 1.16.1
   brace-expansion@5: 5.0.12
   brace-expansion@2: 2.1.7
   ip-address: 10.7.1
@@ -47,8 +48,8 @@ importers:
         specifier: 3.1.8
         version: 3.1.8
       hono:
-        specifier: 4.13.7
-        version: 4.13.7
+        specifier: 4.13.11
+        version: 4.13.11
       js-yaml:
         specifier: 4.3.2
         version: 4.3.2
@@ -168,7 +169,7 @@ packages:
     resolution: {integrity: sha512-e4cFxj3tiuMtsgOT4G9c1hXyGJhg7/Buj7VVeBacRY3fRtkRZZ59Q3nuVp2xbq8BGQXLXCDB253qMhklMOeUDg==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
-      '@modelcontextprotocol/sdk': 1.31.0
+      '@modelcontextprotocol/sdk': 1.32.1
     peerDependenciesMeta:
       '@modelcontextprotocol/sdk':
         optional: true
@@ -227,7 +228,7 @@ packages:
     resolution: {integrity: sha512-eWpQYr67tqJLeaSUl0Q+TquuYfUdTibpOJlUMV2FfUP7+KqCC5TufnwnlXL6mobZBJbGAYRd7ZvEBDCbLInjhg==}
     engines: {node: '>=20'}
     peerDependencies:
-      hono: 4.13.7
+      hono: 4.13.11
 
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -285,8 +286,8 @@ packages:
       '@opentelemetry/api':
         optional: true
 
-  '@modelcontextprotocol/sdk@1.31.0':
-    resolution: {integrity: sha512-UvTMgnNlnIBO/22ob2RcVGDlcvOslQs8T59+FTGdA0L27a39fdGF/EDETNtDVK4DZGpwomlsYpRdA8UXcVL/pw==}
+  '@modelcontextprotocol/sdk@1.32.1':
+    resolution: {integrity: sha512-2DdE+SJDtzLEEWzY1ZjY7Q+VcPhcV1KisD3zI4u0XZyktsjHum1mwbMI+JaulUBi2OZk+KJAi2uPXzxichPkdw==}
     engines: {node: '>=18'}
     peerDependencies:
       '@cfworker/json-schema': ^4.1.1
@@ -908,8 +909,8 @@ packages:
     resolution: {integrity: sha512-PpOwAdQ/YlXQ2vj8a3h8IipDuYRi3wceVQQGYWxNINccq40Anw7BlsEXCMbt1Zt+OLA6Fq9suIpIWD0OsnISlw==}
     engines: {node: '>=8'}
 
-  follow-redirects@1.16.0:
-    resolution: {integrity: sha512-y5rN/uOsadFT/JfYwhxRS5R7Qce+g3zG97+JrtFZlC9klX/W5hD7iiLzScI4nZqUS7DNUdhPgw4xI8W2LuXlUw==}
+  follow-redirects@1.16.1:
+    resolution: {integrity: sha512-FNvFGzoMLWmE6Yj9spb/zjd7yiNCHiAW9/Tg9CXrQ8wuu32HtlJOwWO11OJafl5FfY3DxTdQ0vj42zU1kvv5jg==}
     engines: {node: '>=4.0'}
     peerDependencies:
       debug: '*'
@@ -1015,8 +1016,8 @@ packages:
     resolution: {integrity: sha512-Xwwo44whKBVCYoliBQwaPvtd/2tYFkRQtXDWj1nackaV2JPXx3L0+Jvd8/qCJ2p+ML0/XVkJ2q+Mr+UVdpJK5w==}
     engines: {node: '>=12.0.0'}
 
-  hono@4.13.7:
-    resolution: {integrity: sha512-c8/gF9ac8Y78/agExVocyLevgR+JlpNB444Py0FSX8pJoPdYUfUzRcXtYEYGwt6l19qIlVZPN5Mfsw9jFShmQQ==}
+  hono@4.13.11:
+    resolution: {integrity: sha512-/SMX/RQNJn7oNmFwH6DtwDqcrzZU2otm1FD6OJe2cWF6cfy/F8hq0XVBv7xW3FTJshRQwuBnXHDq2kNsdZnshg==}
     engines: {node: '>=16.9.0'}
 
   hosted-git-info@10.1.1:
@@ -2022,7 +2023,7 @@ snapshots:
   '@blaxel/core@0.3.20(@hey-api/openapi-ts@0.97.3(typescript@5.9.3))':
     dependencies:
       '@hey-api/client-fetch': 0.10.2(@hey-api/openapi-ts@0.97.3(typescript@5.9.3))
-      '@modelcontextprotocol/sdk': 1.31.0(zod@4.4.3)
+      '@modelcontextprotocol/sdk': 1.32.1(zod@4.4.3)
       archiver: 7.0.1
       axios: 1.20.0
       dockerfile-ast: 0.7.1
@@ -2064,14 +2065,14 @@ snapshots:
       get-east-asian-width: 1.6.0
       marked: 18.0.5
 
-  '@google/genai@2.10.0(@modelcontextprotocol/sdk@1.31.0(zod@4.4.3))':
+  '@google/genai@2.10.0(@modelcontextprotocol/sdk@1.32.1(zod@4.4.3))':
     dependencies:
       google-auth-library: 10.9.1
       p-retry: 4.6.2
       protobufjs: 7.6.5
       ws: 8.21.1
     optionalDependencies:
-      '@modelcontextprotocol/sdk': 1.31.0(zod@4.4.3)
+      '@modelcontextprotocol/sdk': 1.32.1(zod@4.4.3)
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -2152,9 +2153,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@hono/node-server@2.0.12(hono@4.13.7)':
+  '@hono/node-server@2.0.12(hono@4.13.11)':
     dependencies:
-      hono: 4.13.7
+      hono: 4.13.11
 
   '@isaacs/cliui@8.0.2':
     dependencies:
@@ -2210,9 +2211,9 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@modelcontextprotocol/sdk@1.31.0(zod@4.4.3)':
+  '@modelcontextprotocol/sdk@1.32.1(zod@4.4.3)':
     dependencies:
-      '@hono/node-server': 2.0.12(hono@4.13.7)
+      '@hono/node-server': 2.0.12(hono@4.13.11)
       ajv: 8.20.0
       ajv-formats: 3.0.1(ajv@8.20.0)
       content-type: 1.0.5
@@ -2222,7 +2223,7 @@ snapshots:
       eventsource-parser: 3.0.6
       express: 5.2.1
       express-rate-limit: 8.6.1(express@5.2.1)
-      hono: 4.13.7
+      hono: 4.13.11
       jose: 6.1.3
       json-schema-typed: 8.0.2
       pkce-challenge: 5.0.1
@@ -2234,10 +2235,10 @@ snapshots:
 
   '@mozilla/readability@0.6.0': {}
 
-  '@openclaw/ai@2026.7.1(@aws-sdk/credential-provider-node@3.972.9)(@modelcontextprotocol/sdk@1.31.0(zod@4.4.3))(@smithy/signature-v4@5.6.12)(ws@8.21.0)(zod@4.4.3)':
+  '@openclaw/ai@2026.7.1(@aws-sdk/credential-provider-node@3.972.9)(@modelcontextprotocol/sdk@1.32.1(zod@4.4.3))(@smithy/signature-v4@5.6.12)(ws@8.21.0)(zod@4.4.3)':
     dependencies:
       '@anthropic-ai/sdk': 0.109.1(zod@4.4.3)
-      '@google/genai': 2.10.0(@modelcontextprotocol/sdk@1.31.0(zod@4.4.3))
+      '@google/genai': 2.10.0(@modelcontextprotocol/sdk@1.32.1(zod@4.4.3))
       '@mistralai/mistralai': 2.4.0
       openai: 6.45.0(@aws-sdk/credential-provider-node@3.972.9)(@smithy/signature-v4@5.6.12)(ws@8.21.0)(zod@4.4.3)
       partial-json: 0.1.7
@@ -2445,7 +2446,7 @@ snapshots:
 
   axios@1.20.0:
     dependencies:
-      follow-redirects: 1.16.0
+      follow-redirects: 1.16.1
       form-data: 4.0.6
       https-proxy-agent: 5.0.1
       proxy-from-env: 2.1.0
@@ -2867,7 +2868,7 @@ snapshots:
       locate-path: 5.0.0
       path-exists: 4.0.0
 
-  follow-redirects@1.16.0: {}
+  follow-redirects@1.16.1: {}
 
   foreground-child@3.3.1:
     dependencies:
@@ -2990,7 +2991,7 @@ snapshots:
 
   highlight.js@11.11.1: {}
 
-  hono@4.13.7: {}
+  hono@4.13.11: {}
 
   hosted-git-info@10.1.1:
     dependencies:
@@ -3261,15 +3262,15 @@ snapshots:
       '@clack/core': 1.4.2
       '@clack/prompts': 1.6.0
       '@earendil-works/pi-tui': 0.80.3
-      '@google/genai': 2.10.0(@modelcontextprotocol/sdk@1.31.0(zod@4.4.3))
+      '@google/genai': 2.10.0(@modelcontextprotocol/sdk@1.32.1(zod@4.4.3))
       '@grammyjs/runner': 2.0.3(grammy@1.44.0)
       '@grammyjs/transformer-throttler': 1.2.1(grammy@1.44.0)
       '@homebridge/ciao': 1.3.9
       '@lydell/node-pty': 1.2.0-beta.12
       '@mistralai/mistralai': 2.4.0
-      '@modelcontextprotocol/sdk': 1.31.0(zod@4.4.3)
+      '@modelcontextprotocol/sdk': 1.32.1(zod@4.4.3)
       '@mozilla/readability': 0.6.0
-      '@openclaw/ai': 2026.7.1(@aws-sdk/credential-provider-node@3.972.9)(@modelcontextprotocol/sdk@1.31.0(zod@4.4.3))(@smithy/signature-v4@5.6.12)(ws@8.21.0)(zod@4.4.3)
+      '@openclaw/ai': 2026.7.1(@aws-sdk/credential-provider-node@3.972.9)(@modelcontextprotocol/sdk@1.32.1(zod@4.4.3))(@smithy/signature-v4@5.6.12)(ws@8.21.0)(zod@4.4.3)
       '@openclaw/fs-safe': 0.4.1
       '@openclaw/proxyline': 0.3.3(undici@8.10.2)
       '@silvia-odwyer/photon-node': 0.3.4
