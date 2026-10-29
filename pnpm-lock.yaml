@@ -29,8 +29,8 @@ importers:
   .:
     dependencies:
       '@blaxel/core':
-        specifier: ^0.3.20
-        version: 0.3.20(@hey-api/openapi-ts@0.97.3(typescript@5.9.3))
+        specifier: ^0.3.32
+        version: 0.3.32(@hey-api/openapi-ts@0.97.3(typescript@5.9.3))
       '@sinclair/typebox':
         specifier: ^0.34.52
         version: 0.34.52
@@ -146,8 +146,8 @@ packages:
     resolution: {integrity: sha512-Nq8OhGWiZIZGV6hLHoyAKLLcJihP/xFeBMGJoUrxTX2psI8dCifzLhZISFb+VWS3wFMRDmCGw5R+dOySCqPLhw==}
     engines: {node: '>=6.9.0'}
 
-  '@blaxel/core@0.3.20':
-    resolution: {integrity: sha512-bgEN/XEsKqmHZrB5TnqlwjAwkXjT9wn47faiAkQy29VxcY7hzVwwYOXaSz/tNy5sQTKqBwnpF/vSKeU0JQaj5w==}
+  '@blaxel/core@0.3.32':
+    resolution: {integrity: sha512-RkQn7/LlcUb8xfko+DXcciEsDuEG1xZ5kEqBFawwtmpvZ+uLtDjK1pRhqJ1Q8MAiYXly+HfyRbQVC4Ykudv3bw==}
     engines: {node: '>=18'}
 
   '@borewit/text-codec@0.2.2':
@@ -2020,7 +2020,7 @@ snapshots:
 
   '@babel/runtime@7.29.7': {}
 
-  '@blaxel/core@0.3.20(@hey-api/openapi-ts@0.97.3(typescript@5.9.3))':
+  '@blaxel/core@0.3.32(@hey-api/openapi-ts@0.97.3(typescript@5.9.3))':
     dependencies:
       '@hey-api/client-fetch': 0.10.2(@hey-api/openapi-ts@0.97.3(typescript@5.9.3))
       '@modelcontextprotocol/sdk': 1.32.1(zod@4.4.3)
