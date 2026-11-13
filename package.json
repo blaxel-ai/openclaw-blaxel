@@ -24,14 +24,14 @@
     "test": "node --test"
   },
   "dependencies": {
-    "@blaxel/core": "^0.3.32",
+    "@blaxel/core": "^0.3.39",
     "@sinclair/typebox": "^0.34.52",
     "zod": "^4.4.3"
   },
   "devDependencies": {
     "@types/node": "^26.2.0",
     "fast-uri": "3.1.9",
-    "hono": "4.13.11",
+    "hono": "4.13.18",
     "js-yaml": "4.3.2",
     "qs": "6.16.1",
     "typescript": "^5.7.0",
